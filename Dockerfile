@@ -6,7 +6,7 @@ FROM debian
 MAINTAINER Hubert Chathi <hubert@uhoreg.ca>
 
 RUN apt-get update \
- && apt-get install -y virtualenv python3-virtualenv git curl \
+ && apt-get install -y virtualenv python3-virtualenv git curl wget \
  && virtualenv -p python3 /env \
  && mkdir /spec
 COPY requirements.txt /tmp
